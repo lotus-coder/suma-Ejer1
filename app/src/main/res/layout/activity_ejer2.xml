@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ejer2">
+
+    <TextView
+        android:id="@+id/TextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Introduce primer valor"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/editTextSuma1"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView1" />
+
+
+    <TextView
+        android:id="@+id/TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="Introduce primer valor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSuma1" />
+
+    <EditText
+        android:id="@+id/editTextSuma2"
+        android:layout_width="0sp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView2"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/BotonSuma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextSuma2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/BotonMultiplica"
+        />
+
+    <Button
+        android:id="@+id/BotonMultiplica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toEndOf="@id/BotonSuma"
+        app:layout_constraintTop_toBottomOf="@id/editTextSuma2"
+        app:layout_constraintEnd_toStartOf="@id/BotonResta"
+        />
+
+    <Button
+        android:id="@+id/BotonResta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextSuma2"
+        app:layout_constraintStart_toEndOf="@id/BotonMultiplica"
+        app:layout_constraintEnd_toStartOf="@id/BotonDivision"
+        />
+
+    <Button
+        android:id="@+id/BotonDivision"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toBottomOf="@id/editTextSuma2"
+        app:layout_constraintStart_toEndOf="@id/BotonResta"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/TextViewResultadoTexto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La suma es de : "
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BotonSuma"/>
+
+    <TextView
+        android:id="@+id/TextViewResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toEndOf="@+id/TextViewResultadoTexto"
+        app:layout_constraintTop_toBottomOf="@+id/BotonSuma"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

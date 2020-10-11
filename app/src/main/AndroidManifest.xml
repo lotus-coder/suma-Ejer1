@@ -9,8 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
-        <activity android:name=".Ejer2">
+        <activity android:name=".ejer6"></activity>
+        <activity android:name=".ejer5" />
+        <activity android:name=".ejer4" />
+        <activity android:name=".ejer3" />
+        <activity android:name=".Ejer2" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".cambiaFondo">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

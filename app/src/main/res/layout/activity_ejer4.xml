@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ejer4">
+
+    <Button
+        android:id="@+id/buttonGoog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Google"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toEndOf="@id/buttonYah"
+        app:layout_constraintEnd_toEndOf="parent"
+ />
+
+    <Button
+        android:id="@+id/buttonYah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yahoo"
+        android:layout_marginTop="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonGoog"
+        app:layout_constraintStart_toEndOf="@id/buttonBing"
+/>
+
+    <Button
+        android:id="@+id/buttonBing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bing"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonYah"
+        />
+
+    <ImageView
+        android:id="@+id/imageBing"
+        android:layout_width="321dp"
+        android:layout_height="313dp"
+        android:src="@mipmap/iconobing"
+        android:visibility="invisible"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonYah"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageGoogle"
+        android:layout_width="321dp"
+        android:layout_height="313dp"
+        android:layout_marginTop="30sp"
+        android:visibility="invisible"
+        android:src="@mipmap/iconogoogle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonYah" />
+    <ImageView
+        android:id="@+id/imageYahoo"
+        android:src="@mipmap/iconoyahoo"
+        android:layout_width="321dp"
+        android:layout_height="313dp"
+        android:visibility="invisible"
+        android:layout_marginTop="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonYah"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
